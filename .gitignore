@@ -1,0 +1,4 @@
+mailer/__pycache__
+mailer/migrations/__pycache__
+emailapp/__pycache__
+db.sqlite3

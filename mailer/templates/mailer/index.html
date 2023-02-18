@@ -1,0 +1,24 @@
+<div class="auth">
+    <div class="card">
+        <form method="POST" action="{% url 'mailer' %}" class="form auth__form">
+            {% csrf_token %}
+
+            <div class="form__field" >
+                <label for="formInput#text">Title</label>
+                <input style="width: 100%;" type="text" name="title" maxlength="100" required="" id="id_title">
+            </div>
+            <div class="form__field" >
+                <label for="formInput#text">Message </label>
+                <textarea style="width: 100%;resize: none;" name="description" cols="40" rows="10" required="" id="id_description"></textarea>
+            </div>
+            <div class="form__field" >
+                <label for="formInput#text">Email address</label>
+                <input style="width: 100%;" type="email" name="email_address" maxlength="254" required="" id="id_email_address">
+            </div>
+
+            <div class="auth__actions">
+                <input class="btn btn--sub btn--lg" type="submit" value="Send" />
+            </div>
+        </form>
+    </div>
+</div>
